@@ -43,6 +43,7 @@ docker run --name mongodb -d -p 27017:27017 mongo
 # Si ya existe el contenedor, solo iniciarlo
 docker start mongodb
 ```
+
 ### Inicializar Dgraph
 ESTO TODAVIA NO SE BIEN
 ```
@@ -50,6 +51,11 @@ docker run --name dgraph -d -p 8080:8080 -p 9080:9080 dgraph/standalone:latest
 # Si ya existe el contenedor, solo iniciarlo
 docker start dgraph
 ```
+API services
+```
+python -m uvicorn main:app --reload
+```
+
 Una vez que todo este ejecutandose, se tienen que poblar las bases de datos
 ```
 python populate.py
