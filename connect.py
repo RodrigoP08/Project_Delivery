@@ -32,3 +32,15 @@ def setup_logging():
  
 setup_logging()
 log = logging.getLogger("connect")
+
+def connect_cassandra():
+    log.info("Conectando a Cassandra: %s:%s", CASSANDRA_IPS, CASSANDRA_PORT)
+    try:
+        cluster = Cluster(CASSANDRA_IPS, port=CASSANDRA_PORT)
+        session = cluster.connect()
+        session.set_keyspace(CASSANDRA_KEYSPACE)
+        log.info("Cassandra conectado. Keyspace: %s", CASSANDRA_KEYSPACE)
+        return session
+    except Exception as e:
+        log.error("Error crítico al intentar conectar a Cassandra: %s", e)
+        raise e
