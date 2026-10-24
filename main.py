@@ -46,35 +46,33 @@ def actions_cassandra(session):
                 continue
     
             if option == 0:
-                print(f"\nQ1: ")
+                print(f"\nExiting...")
+                break
     
             elif option == 1:
-                print(f"\nQ1: ")
+                print(f"\nQ1: Ultimos 5 viajes de un usuario")
                 # model.function_example(session)
     
             elif option == 2:
-                print(f"\nQ2: ")
+                print(f"\nQ2: Viajes realizados por ruta")
     
             elif option == 3:
-                print(f"\nQ3:")
+                print(f"\nQ3: Estaciones recorridas por un usuario en un viaje especifico")
     
             elif option == 4:
-                print(f"\nQ4:")
+                print(f"\nQ4: Hora de inicio de la ruta de un transporte")
     
             elif option == 5:
-                print(f"\nQ5:")
+                print(f"\nQ5: Uso de ruta por hora")
     
             elif option == 6:
-                print(f"\nQ6:")
+                print(f"\nQ6:Viajes de un usuario en un rango de fechas")
     
             elif option == 7:
-                print(f"\nQ7:")
+                print(f"\nQ7: Historial de recorridos de un transporte")
                     
             elif option == 8:
-                print(f"\nQ8")
-            elif option == 9:
-                print("Exiting...")
-                break
+                print(f"\nQ8: Viajes de un usuario en una ruta especifica")
             else:
                 print("Invalid option. Please try again.")
         
