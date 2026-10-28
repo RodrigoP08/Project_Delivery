@@ -8,6 +8,8 @@ import logging
 from pymongo import MongoClient
 from cassandra.cluster import Cluster
 
+from Cassandra import model 
+
 
 CASSANDRA_IPS = os.getenv("CASSANDRA_CLUSTER_IPS", "127.0.0.1").split(",")
 CASSANDRA_PORT = int(os.getenv("CASSANDRA_PORT", "9042"))
@@ -38,7 +40,10 @@ def connect_cassandra():
     try:
         cluster = Cluster(CASSANDRA_IPS, port=CASSANDRA_PORT)
         session = cluster.connect()
+        
+        model.create_keyspace(session, CASSANDRA_KEYSPACE, REPLICATION_FACTOR)
         session.set_keyspace(CASSANDRA_KEYSPACE)
+        
         log.info("Cassandra conectado. Keyspace: %s", CASSANDRA_KEYSPACE)
         return session
     except Exception as e:

@@ -1,7 +1,7 @@
 
 from connect import setup_logging, connect_cassandra, log, sys
 
-from Cassandra import model
+# from Cassandra import model
 
 
 
@@ -20,16 +20,15 @@ def print_menu_cassandra():
     #MENY DE QUERYS
     #ESPERAR CONFIRMACION DEL KICK OFF
     mm_options = {
-        0: "",
-        1: "",
-        2: "",
-        3: "",
-        4: "",
-        5: "",
-        6: "",
-        7: "",
-        8: "",
-        9: "EXIT",
+        0: "EXIT",
+        1: "Ultimos 5 viajes de un usuario",
+        2: "Viajes realizados por una ruta",
+        3: "Estaciones recorridas por un usuario en un viaje especifico",
+        4: "Hora de inicio de la ruta de un transporte",
+        5: "Uso de ruta por hora",
+        6: "Viajes de un usuario en un rango de fechas",
+        7: "Historial de recorridos de un transporte",
+        8: "Viajes de un usuario en una ruta especifica"
     }
     for key in mm_options.keys():
         print(key, '--', mm_options[key])
@@ -91,10 +90,10 @@ def main():
             print("Please enter a valid number.")
             continue
         
-        if opcion == "5":
+        if opcion == 5:
             print("Exiting logistics application...")
-            sys.exit(0)
             break
+            
         if opcion == 1: #poblar
             break
         if opcion == 2 : ##MONGO
@@ -103,7 +102,6 @@ def main():
             break
         if opcion == 4: ##Cassandra
             actions_cassandra(cass_session);                
-            break
                     
 
 if __name__ == "__main__":
