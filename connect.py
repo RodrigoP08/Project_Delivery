@@ -9,13 +9,15 @@ from pymongo import MongoClient
 from cassandra.cluster import Cluster
 
 from Cassandra import model 
-
+from Mongo import model as mongo_model
 
 CASSANDRA_IPS = os.getenv("CASSANDRA_CLUSTER_IPS", "127.0.0.1").split(",")
 CASSANDRA_PORT = int(os.getenv("CASSANDRA_PORT", "9042"))
 CASSANDRA_KEYSPACE = os.getenv("CASSANDRA_KEYSPACE", "transporte")
 REPLICATION_FACTOR = os.getenv('CASSANDRA_REPLICATION_FACTOR', '1')
 
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://127.0.0.1:27017")
+MONGODB_DB = os.getenv("MONGODB_DB", "transporte")
 
 LOG_DIR = "logs"
 LOG_FILE = os.path.join(LOG_DIR, "app.log")
@@ -48,4 +50,20 @@ def connect_cassandra():
         return session
     except Exception as e:
         log.error("Error crítico al intentar conectar a Cassandra: %s", e)
+        raise e
+
+
+def connect_mongo():
+    log.info("Conectando a MongoDB: %s", MONGODB_URI)
+    try:
+        client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=3000)
+        client.admin.command("ping")   # falla rapido si el contenedor no esta arriba
+        db = client[MONGODB_DB]
+
+        mongo_model.setup_schema(db)   # colecciones con validador + indices (idempotente)
+
+        log.info("MongoDB conectado. Base de datos: %s", MONGODB_DB)
+        return db
+    except Exception as e:
+        log.error("Error critico al intentar conectar a MongoDB: %s", e)
         raise e
