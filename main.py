@@ -1,5 +1,5 @@
 
-from connect import setup_logging, connect_cassandra, log, sys
+from connect import setup_logging, connect_cassandra, connect_mongo, log, sys
 
 # from Cassandra import model
 
@@ -97,6 +97,7 @@ def ask_station(label):
 
 #obtener fecha 
 def ask_date():
+    pass
 
 def actions_mongo(db):
     while(True):
@@ -146,6 +147,7 @@ def actions_mongo(db):
 def main():
     try:
         cass_session = connect_cassandra()
+        db_session = connect_mongo()
     except Exception:
         log.error("No se pudo iniciar. Revisa que las 3 bases se esten ejecutando")
         return
@@ -165,6 +167,7 @@ def main():
         if opcion == 1: #poblar
             break
         if opcion == 2 : ##MONGO
+            actions_mongo(db_session)
             break
         if opcion == 3: ## DGRAPH
             break

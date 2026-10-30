@@ -8,8 +8,8 @@ import logging
 from pymongo import MongoClient
 from cassandra.cluster import Cluster
 
-from Cassandra import model 
-from Mongo import model as mongo_model
+from Cassandra import model_Cassandra 
+from Mongo import model_Mongo
 
 CASSANDRA_IPS = os.getenv("CASSANDRA_CLUSTER_IPS", "127.0.0.1").split(",")
 CASSANDRA_PORT = int(os.getenv("CASSANDRA_PORT", "9042"))
@@ -43,7 +43,7 @@ def connect_cassandra():
         cluster = Cluster(CASSANDRA_IPS, port=CASSANDRA_PORT)
         session = cluster.connect()
         
-        model.create_keyspace(session, CASSANDRA_KEYSPACE, REPLICATION_FACTOR)
+        model_Cassandra.create_keyspace(session, CASSANDRA_KEYSPACE, REPLICATION_FACTOR)
         session.set_keyspace(CASSANDRA_KEYSPACE)
         
         log.info("Cassandra conectado. Keyspace: %s", CASSANDRA_KEYSPACE)
@@ -60,7 +60,7 @@ def connect_mongo():
         client.admin.command("ping")   # falla rapido si el contenedor no esta arriba
         db = client[MONGODB_DB]
 
-        mongo_model.setup_schema(db)   # colecciones con validador + indices (idempotente)
+        # mongo_model.setup_schema(db)   # colecciones con validador + indices (idempotente)
 
         log.info("MongoDB conectado. Base de datos: %s", MONGODB_DB)
         return db
