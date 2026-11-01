@@ -11,6 +11,11 @@ from cassandra.cluster import Cluster
 from Cassandra import model_Cassandra 
 from Mongo import model_Mongo
 
+import csv
+import json
+import pydgraph
+
+
 CASSANDRA_IPS = os.getenv("CASSANDRA_CLUSTER_IPS", "127.0.0.1").split(",")
 CASSANDRA_PORT = int(os.getenv("CASSANDRA_PORT", "9042"))
 CASSANDRA_KEYSPACE = os.getenv("CASSANDRA_KEYSPACE", "transporte")
@@ -67,3 +72,60 @@ def connect_mongo():
     except Exception as e:
         log.error("Error critico al intentar conectar a MongoDB: %s", e)
         raise e
+
+
+#Dgraph
+
+# ------------------------
+# CONNECTION
+# ------------------------
+# Conexión a Dgraph (localhost:9080)
+client_stub = pydgraph.DgraphClientStub('localhost:9080')
+client = pydgraph.DgraphClient(client_stub)
+
+# ──────────────────────────────────────────────────────────────
+# DGRAPH
+# ──────────────────────────────────────────────────────────────
+
+DGRAPH_ADDR = os.getenv("DGRAPH_ADDR", "localhost:9080")
+
+# Si usas ACL, puedes definir usuario y contraseña en el entorno
+DGRAPH_USER = os.getenv("DGRAPH_USER")
+DGRAPH_PASSWORD = os.getenv("DGRAPH_PASSWORD")
+
+def connect_dgraph():
+    """
+    Crea un stub y un cliente de Dgraph.
+    Si DGRAPH_USER y DGRAPH_PASSWORD están definidos, intenta hacer login.
+    """
+    log.info("Conectando a Dgraph: %s", DGRAPH_ADDR)
+    try:
+        # 1. Crear el stub (la conexión gRPC real se establece de forma perezosa)
+        client_stub = pydgraph.DgraphClientStub(DGRAPH_ADDR)
+
+        # 2. Crear el cliente Dgraph a partir del stub
+        client = pydgraph.DgraphClient(client_stub)
+
+        # 3. (Opcional) Login si hay credenciales definidas
+        if DGRAPH_USER and DGRAPH_PASSWORD:
+            log.info("Realizando login en Dgraph como usuario %s", DGRAPH_USER)
+            client.login(DGRAPH_USER, DGRAPH_PASSWORD)
+
+        log.info("Dgraph conectado correctamente")
+        return client, client_stub
+
+    except Exception as e:
+        log.error("Error crítico al intentar conectar a Dgraph: %s", e)
+        raise e
+
+
+# ──────────────────────────────────────────────────────────────
+# Variables globales (siguiendo el mismo estilo que Cassandra y Mongo)
+# ──────────────────────────────────────────────────────────────
+try:
+    dgraph_client, dgraph_stub = connect_dgraph()
+except Exception:
+    # Si Dgraph no está disponible, el programa no debe caerse necesariamente.
+    # Ajusta este comportamiento según tus necesidades.
+    dgraph_client, dgraph_stub = None, None
+    log.warning("Dgraph no disponible. Se continuará sin conexión a Dgraph.")
