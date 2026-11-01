@@ -209,8 +209,7 @@ def main():
     try:
         cass_session = connect_cassandra()
         db_session = connect_mongo()
-        dgraph_session = connect_dgraph()
-        
+        dgraph_client, dgraph_stub = connect_dgraph()        
     except Exception:
         log.error("No se pudo iniciar. Revisa que las 3 bases se esten ejecutando")
         return
@@ -233,7 +232,7 @@ def main():
             actions_mongo(db_session)
             break
         if opcion == 3: ## DGRAPH
-            actions_dgraph(dgraph_session)
+            actions_dgraph(dgraph_client)
             break
 
         if opcion == 4: ##Cassandra
