@@ -4,7 +4,7 @@ from connect import setup_logging, connect_cassandra, connect_mongo, log, sys
 # from Cassandra import model
 
 
-
+log = setup_logging()
 def print_main_menu():
     menu = '''
     Análisis de Redes de Transporte
