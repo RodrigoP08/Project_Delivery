@@ -32,32 +32,27 @@ pip install -r requirements.txt
 
 ```bash
 # Crear y arrancar el contenedor (primera vez)
-docker run --name logistics -p 9042:9042 -d cassandra
-
+docker run --name transport_Cassandra -p 9042:9042 -d cassandra
 # Si ya existe el contenedor, solo iniciarlo
-docker start logistics
+docker start transport_Cassandra
 ```
 ### Iniciar MongoDB
 ```
-docker run --name mongodb -d -p 27017:27017 mongo
+# Crear y arrancar el contenedor (primera vez)
+docker run --name transporte_mongodb -d -p 27017:27017 mongo
 # Si ya existe el contenedor, solo iniciarlo
-docker start mongodb
+docker start transporte_mongodb
 ```
 
 ### Inicializar Dgraph
-ESTO TODAVIA NO SE BIEN
 ```
-docker run --name dgraph -d -p 8080:8080 -p 9080:9080 dgraph/standalone:latest
+# Crear y arrancar el contenedor (primera vez)
+docker run --name transporte_dgraph -d -p 8080:8080 -p 9080:9080 dgraph/standalone:latest
 # Si ya existe el contenedor, solo iniciarlo
-docker start dgraph
+docker start transporte_dgraph
 ```
-API services
+## 2. Ejecutar aplicacion
 ```
-python -m uvicorn main:app --reload
-```
-
-Una vez que todo este ejecutandose, se tienen que poblar las bases de datos
-```
-python populate.py
+python main.py
 ```
 
