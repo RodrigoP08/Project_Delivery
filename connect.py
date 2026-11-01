@@ -5,11 +5,11 @@ import sys
 
 import logging
 
-from pymongo import MongoClient
+from pymongo import MongoClient  
 from cassandra.cluster import Cluster
 
 from Cassandra import model_Cassandra 
-from Mongo import model_Mongo
+from Mongo import model_Mongo #archivo con el esquema y consultas
 
 import csv
 import json
@@ -22,7 +22,7 @@ CASSANDRA_KEYSPACE = os.getenv("CASSANDRA_KEYSPACE", "transporte")
 REPLICATION_FACTOR = os.getenv('CASSANDRA_REPLICATION_FACTOR', '1')
 
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://127.0.0.1:27017")
-MONGODB_DB = os.getenv("MONGODB_DB", "transporte")
+MONGODB_DB = os.getenv("MONGODB_DB", "transporte") 
 
 DGRAPH_ADDR = os.getenv("DGRAPH_ADDR", "localhost:9080")
 
@@ -64,16 +64,16 @@ def connect_cassandra():
 def connect_mongo():
     log.info("Conectando a MongoDB: %s", MONGODB_URI)
     try:
-        client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=3000)
+        client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=3000)  #si el server no responde falla en 3 seg
         client.admin.command("ping")   # falla rapido si el contenedor no esta arriba
-        db = client[MONGODB_DB]
+        db = client[MONGODB_DB] #obtiwne la base transporte
 
-        # mongo_model.setup_schema(db)   # colecciones con validador + indices (idempotente)
+        # model_Mongo.setup_schema(db)   # colecciones con validador + indices (idempotente)
 
         log.info("MongoDB conectado. Base de datos: %s", MONGODB_DB)
-        return db
+        return db  #devuelve el objeto de la base 
     except Exception as e:
-        log.error("Error critico al intentar conectar a MongoDB: %s", e)
+        log.error("Error critico al intentar conectar a MongoDB: %s", e) #registra el error en logs y lo vuelve a lanzar a main
         raise e
 
 def connect_dgraph():
