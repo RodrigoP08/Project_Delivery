@@ -53,6 +53,7 @@ def connect_cassandra():
         
         model_Cassandra.create_keyspace(session, CASSANDRA_KEYSPACE, REPLICATION_FACTOR)
         session.set_keyspace(CASSANDRA_KEYSPACE)
+        model_Cassandra.create_schema(session)
         
         log.info("Cassandra conectado. Keyspace: %s", CASSANDRA_KEYSPACE)
         return session
