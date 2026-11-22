@@ -8,7 +8,7 @@ ruta_raiz = os.path.abspath( os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(ruta_raiz)
 from connect import log 
 
-import model_Cassandra
+from Cassandra import model_Cassandra
 
 def print_menu_cassandra():
     mm_options = {
