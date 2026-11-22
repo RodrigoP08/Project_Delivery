@@ -5,6 +5,9 @@ from pymongo import ASCENDING as ASC
 
 log = logging.getLogger()
 
+
+
+
 #colecciones 
 def _ensure_collection(db, name):
     """Crea la colección si no existe."""
@@ -51,3 +54,39 @@ def setup_schema(db):
     create_routes(db)
     create_stations(db)
     create_schedules(db)
+
+def _day(value):
+    """'YYYY-MM-DD'datetime -> datetime a medianoche, o sea como se guarda service_date."""
+    if isinstance(value, datetime):
+        return value.replace(hour=0, minute=0, second=0, microsecond=0)
+    if isinstance(value, date):
+        return datetime(value.year, value.month, value.day)
+    return datetime.strptime(str(value), "%Y-%m-%d")
+
+
+def print_docs(docs, limit=30):
+    """Imprime una lista de documentos, una línea por documento"""
+    if not docs:
+        print("  No se encontraron resultados.")
+        return
+    if isinstance(docs, dict):
+        docs = [docs]
+    for i, doc in enumerate(docs[:limit], start=1):
+        parts = []
+        for key, value in doc.items():
+            if isinstance(value, datetime):
+                value = value.strftime("%Y-%m-%d %H:%M")
+            parts.append(f"{key}: {value}")
+        print(f"  {i:>2}. " + " | ".join(parts))
+    if len(docs) > limit:
+        print(f"  ... y {len(docs) - limit} más (total: {len(docs)})")
+    else:
+        print(f"\n  Total: {len(docs)}")
+
+
+SCHEDULE_FIELDS = {"_id": 0, "transport_id": 1, "transport_type": 1, "route_id": 1,
+                   "departure_station": 1, "arrival_station": 1,
+                   "departure_time": 1, "arrival_time": 1}
+
+ROUTE_FIELDS = {"_id": 0, "route_id": 1, "route_name": 1, "origin_station": 1,
+                "destination_station": 1, "transport_type": 1, "estimated_duration": 1}
