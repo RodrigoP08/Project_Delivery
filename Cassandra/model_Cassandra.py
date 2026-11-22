@@ -21,6 +21,12 @@ CREATE_TRIPS_BY_USER = """
     ) WITH CLUSTERING ORDER BY (start_time DESC, trip_id ASC)
 """
 
+INSERT_TRIPS_BY_USER = """
+    INSERT INTO trips_by_user (user_id, start_time, trip_id, route_id, start_station, end_station, end_time)
+    VALUES(?,?,?,?,?,?,?)
+"""
+
+
 CREATE_TRIPS_BY_ROUTE = """
     CREATE TABLE IF NOT EXISTS trips_by_route (
         route_id TEXT,
@@ -34,6 +40,10 @@ CREATE_TRIPS_BY_ROUTE = """
     ) WITH CLUSTERING ORDER BY (start_time DESC, trip_id ASC)
 """
 
+INSERT_TRIPS_BY_ROUTE = """
+    INSERT INTO trips_by_route (route_id, trip_date, start_time, trip_id, transport_id, end_time, passenger_count)
+    VALUES(?,?,?,?,?,?,?)
+"""
 CREATE_STOPS_USER_TRIP = """
     CREATE TABLE IF NOT EXISTS stops_user_trip (
         user_id TEXT,
@@ -44,6 +54,10 @@ CREATE_STOPS_USER_TRIP = """
         arrival_time TIMESTAMP,
         PRIMARY KEY ((user_id, trip_id), stop_sequence)
     ) WITH CLUSTERING ORDER BY (stop_sequence ASC)
+"""
+INSERT_STOPS_USER_TRIP = """
+    INSERT INTO stops_user_trip (user_id, trip_id, stop_sequence, station_id, station_name, arrival_time)
+    VALUES(?,?,?,?,?,?)
 """
 
 CREATE_TRIPS_TRANSPORT_DAY = """
@@ -59,6 +73,10 @@ CREATE_TRIPS_TRANSPORT_DAY = """
         PRIMARY KEY ((transport_id, service_date), departure_time, trip_id)
     ) WITH CLUSTERING ORDER BY (departure_time ASC, trip_id ASC)
 """
+INSERT_TRIPS_TRANSPORT_DAY = """
+    INSERT INTO trips_transport_day (transport_id, service_date, departure_time, trip_id, route_id, start_station, arrival_time, passenger_count)
+    VALUES(?,?,?,?,?,?,?,?)
+"""
 
 CREATE_USE_ROUTE_PER_HOUR = """
     CREATE TABLE IF NOT EXISTS use_route_per_hour (
@@ -69,9 +87,13 @@ CREATE_USE_ROUTE_PER_HOUR = """
         PRIMARY KEY ((route_id, usage_date), hour)
     ) WITH CLUSTERING ORDER BY (hour ASC)
 """
+INSERT_USE_ROUTE_PER_HOUR = """
+    INSERT INTO use_route_per_hour (route_id, usage_date, hour, passenger_count)
+    VALUES(?,?,?,?)
+"""
 
-CREATE_TRIPS_BY_USER_ROUTE = """
-    CREATE TABLE IF NOT EXISTS trips_by_user_route (
+CREATE_STOPS_USER = """
+    CREATE TABLE IF NOT EXISTS stops_user (
         user_id TEXT,
         route_id TEXT,
         start_time TIMESTAMP,
@@ -82,6 +104,10 @@ CREATE_TRIPS_BY_USER_ROUTE = """
     ) WITH CLUSTERING ORDER BY (start_time DESC, trip_id ASC)
 """
 
+INSERT_STOPS_USER = """
+    INSERT INTO stops_user (user_id, route_id, start_time, trip_id, start_station, end_station)
+    VALUES(?,?,?,?,?,?)
+"""
 
 # Req 1: últimos 5 viajes de un usuario (start_time DESC, así que LIMIT 5 basta)
 SELECT_LAST_5_TRIPS_FROM_USER = """
@@ -104,6 +130,7 @@ SELECT_STOPS_USER_TRIP = """
     FROM stops_user_trip
     WHERE user_id = ? AND trip_id = ?
 """
+
 
 # Req 4: hora de inicio de la ruta de un transporte (primer viaje del día, orden ASC)
 SELECT_FIRST_DEPARTURE_TRANSPORT = """
@@ -142,7 +169,7 @@ SELECT_TRANSPORT_HISTORY = """
 # Req 8: viajes de un usuario en una ruta específica
 SELECT_USER_TRIPS_ON_ROUTE = """
     SELECT trip_id, start_time, start_station, end_station
-    FROM trips_by_user_route
+    FROM stops_user
     WHERE user_id = ? AND route_id = ?
 """
 
@@ -157,9 +184,9 @@ def create_schema(session):
     session.execute(CREATE_TRIPS_BY_USER)
     session.execute(CREATE_TRIPS_BY_ROUTE)
     session.execute(CREATE_STOPS_USER_TRIP)
-    session.execute(CREATE_TRIPS_TRANSPORT_DAY)
     session.execute(CREATE_USE_ROUTE_PER_HOUR)
-    session.execute(CREATE_TRIPS_BY_USER_ROUTE)
+    session.execute(CREATE_STOPS_USER)
+    session.execute(CREATE_TRIPS_TRANSPORT_DAY)
     
 def get_last_5_trips(session, user_id):
     stmt = session.prepare(SELECT_LAST_5_TRIPS_FROM_USER)
@@ -263,6 +290,7 @@ def get_transport_history(session, transport_id, service_date):
 
 
 def get_user_trips_on_route(session, user_id, route_id):
+    log.info(f"Retrieving trips for user: {user_id} on route: {route_id}")
     stmt = session.prepare(SELECT_USER_TRIPS_ON_ROUTE)
     rows = session.execute(stmt, [user_id, route_id])
 

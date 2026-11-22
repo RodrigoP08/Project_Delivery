@@ -5,6 +5,8 @@ from Cassandra import cassandra_menus
 from Mongo import mongo_menus
 from Dgraph import dgraph_menus
 
+from populate import poblar_datos
+
 log = setup_logging()
 def print_main_menu():
     menu = '''
@@ -41,17 +43,15 @@ def main():
             break
             
         if opcion == 1: #poblar
-            break
+            poblar_datos(cass_session)
         if opcion == 2 : ##MONGO
             mongo_menus.actions_mongo(db_session)
-            break
         if opcion == 3: ## DGRAPH
             dgraph_menus.actions_dgraph(dgraph_client)
-            break
 
         if opcion == 4: ##Cassandra
             cassandra_menus.actions_cassandra(cass_session);
-            break
+            
 
              
                     
