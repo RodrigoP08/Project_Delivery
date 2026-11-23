@@ -226,3 +226,12 @@ def get_routes_per_transport_type(db):
     print("\n=== Cantidad de rutas por tipo de transporte ===")
     print_docs(docs)
     return docs
+
+
+
+def list_stations(db):
+    return list(db.stations.find({}, {"_id": 0, "station_id": 1, "station_name": 1}).sort("station_id", 1))
+
+
+def list_transport_types(db):
+    return sorted(db.routes.distinct("transport_type"))
