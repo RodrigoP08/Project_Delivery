@@ -229,6 +229,24 @@ def get_routes_per_transport_type(db):
 
 
 
+def explain_query(db, collection, filter_, sort=None):
+    """Muestra qué índice usó MongoDB en un find (explain)."""
+    cmd = {"find": collection, "filter": filter_}
+    if sort:
+        cmd["sort"] = sort
+    result = db.command("explain", cmd, verbosity="executionStats")
+
+    plan = result["queryPlanner"]["winningPlan"]
+    plan = plan.get("queryPlan", plan)       
+    while "inputStage" in plan:             
+        plan = plan["inputStage"]
+
+    stats = result["executionStats"]
+    print(f"  Etapa:    {plan['stage']}")     #IXSCAN = índice, COLLSCAN = sin índice
+    print(f"  Índice:   {plan.get('indexName', 'ninguno')}")
+    print(f"  Documentos revisados: {stats['totalDocsExamined']} | devueltos: {stats['nReturned']}")
+
+
 def list_stations(db):
     return list(db.stations.find({}, {"_id": 0, "station_id": 1, "station_name": 1}).sort("station_id", 1))
 
