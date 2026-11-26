@@ -1,0 +1,2986 @@
+{
+ "set": [
+  {
+   "uid": "_:linea_L1",
+   "dgraph.type": "LineaTransporte",
+   "Id_Linea": 1,
+   "Name_Linea": "Línea 1 Tren Ligero",
+   "Tipo_Transporte": "tren",
+   "TIENE_ESTACION": [
+    {
+     "uid": "_:est_1"
+    },
+    {
+     "uid": "_:est_2"
+    },
+    {
+     "uid": "_:est_3"
+    },
+    {
+     "uid": "_:est_4"
+    },
+    {
+     "uid": "_:est_5"
+    },
+    {
+     "uid": "_:est_6"
+    },
+    {
+     "uid": "_:est_7"
+    },
+    {
+     "uid": "_:est_8"
+    },
+    {
+     "uid": "_:est_9"
+    },
+    {
+     "uid": "_:est_10"
+    },
+    {
+     "uid": "_:est_11"
+    },
+    {
+     "uid": "_:est_12"
+    },
+    {
+     "uid": "_:est_13"
+    },
+    {
+     "uid": "_:est_14"
+    },
+    {
+     "uid": "_:est_15"
+    },
+    {
+     "uid": "_:est_16"
+    },
+    {
+     "uid": "_:est_17"
+    },
+    {
+     "uid": "_:est_18"
+    },
+    {
+     "uid": "_:est_19"
+    },
+    {
+     "uid": "_:est_20"
+    }
+   ]
+  },
+  {
+   "uid": "_:linea_L2",
+   "dgraph.type": "LineaTransporte",
+   "Id_Linea": 2,
+   "Name_Linea": "Línea 2 Tren Ligero",
+   "Tipo_Transporte": "tren",
+   "TIENE_ESTACION": [
+    {
+     "uid": "_:est_9"
+    },
+    {
+     "uid": "_:est_21"
+    },
+    {
+     "uid": "_:est_22"
+    },
+    {
+     "uid": "_:est_23"
+    },
+    {
+     "uid": "_:est_24"
+    },
+    {
+     "uid": "_:est_25"
+    },
+    {
+     "uid": "_:est_26"
+    },
+    {
+     "uid": "_:est_27"
+    },
+    {
+     "uid": "_:est_28"
+    },
+    {
+     "uid": "_:est_29"
+    }
+   ]
+  },
+  {
+   "uid": "_:linea_L3",
+   "dgraph.type": "LineaTransporte",
+   "Id_Linea": 3,
+   "Name_Linea": "Línea 3 Tren Ligero",
+   "Tipo_Transporte": "tren",
+   "TIENE_ESTACION": [
+    {
+     "uid": "_:est_30"
+    },
+    {
+     "uid": "_:est_31"
+    },
+    {
+     "uid": "_:est_32"
+    },
+    {
+     "uid": "_:est_33"
+    },
+    {
+     "uid": "_:est_34"
+    },
+    {
+     "uid": "_:est_35"
+    },
+    {
+     "uid": "_:est_6"
+    },
+    {
+     "uid": "_:est_36"
+    },
+    {
+     "uid": "_:est_37"
+    },
+    {
+     "uid": "_:est_38"
+    },
+    {
+     "uid": "_:est_39"
+    },
+    {
+     "uid": "_:est_40"
+    },
+    {
+     "uid": "_:est_41"
+    },
+    {
+     "uid": "_:est_42"
+    },
+    {
+     "uid": "_:est_43"
+    },
+    {
+     "uid": "_:est_44"
+    },
+    {
+     "uid": "_:est_45"
+    },
+    {
+     "uid": "_:est_46"
+    }
+   ]
+  },
+  {
+   "uid": "_:linea_MP",
+   "dgraph.type": "LineaTransporte",
+   "Id_Linea": 4,
+   "Name_Linea": "Mi Macro Periférico",
+   "Tipo_Transporte": "camion",
+   "TIENE_ESTACION": [
+    {
+     "uid": "_:est_47"
+    },
+    {
+     "uid": "_:est_48"
+    },
+    {
+     "uid": "_:est_49"
+    },
+    {
+     "uid": "_:est_50"
+    },
+    {
+     "uid": "_:est_51"
+    },
+    {
+     "uid": "_:est_52"
+    },
+    {
+     "uid": "_:est_53"
+    },
+    {
+     "uid": "_:est_2"
+    },
+    {
+     "uid": "_:est_54"
+    },
+    {
+     "uid": "_:est_55"
+    },
+    {
+     "uid": "_:est_56"
+    },
+    {
+     "uid": "_:est_57"
+    },
+    {
+     "uid": "_:est_58"
+    },
+    {
+     "uid": "_:est_59"
+    },
+    {
+     "uid": "_:est_31"
+    },
+    {
+     "uid": "_:est_60"
+    },
+    {
+     "uid": "_:est_61"
+    },
+    {
+     "uid": "_:est_62"
+    },
+    {
+     "uid": "_:est_63"
+    },
+    {
+     "uid": "_:est_64"
+    },
+    {
+     "uid": "_:est_65"
+    },
+    {
+     "uid": "_:est_66"
+    },
+    {
+     "uid": "_:est_67"
+    },
+    {
+     "uid": "_:est_68"
+    },
+    {
+     "uid": "_:est_69"
+    },
+    {
+     "uid": "_:est_70"
+    },
+    {
+     "uid": "_:est_20"
+    },
+    {
+     "uid": "_:est_71"
+    },
+    {
+     "uid": "_:est_72"
+    },
+    {
+     "uid": "_:est_73"
+    },
+    {
+     "uid": "_:est_74"
+    },
+    {
+     "uid": "_:est_75"
+    },
+    {
+     "uid": "_:est_76"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_1",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 1,
+   "Name_Estacion": "Auditorio",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.357,
+     20.7455
+    ]
+   },
+   "Pasajeros_diarios": 9283,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_2",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_2",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 2,
+   "Name_Estacion": "Periférico Norte",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3565,
+     20.7366
+    ]
+   },
+   "Pasajeros_diarios": 13681,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    },
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_1",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_3",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_53",
+     "CONECTA_CON|distancia_km": 0.34,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_54",
+     "CONECTA_CON|distancia_km": 1.08,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_3",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 3,
+   "Name_Estacion": "Dermatología",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.356,
+     20.7277
+    ]
+   },
+   "Pasajeros_diarios": 3062,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_2",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_4",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_4",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 4,
+   "Name_Estacion": "Atemajac",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3555,
+     20.7188
+    ]
+   },
+   "Pasajeros_diarios": 3055,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_3",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_5",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_5",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 5,
+   "Name_Estacion": "División del Norte",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.355,
+     20.7099
+    ]
+   },
+   "Pasajeros_diarios": 4519,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_4",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_6",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_6",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 6,
+   "Name_Estacion": "Ávila Camacho",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3545,
+     20.701
+    ]
+   },
+   "Pasajeros_diarios": 23438,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    },
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_5",
+     "CONECTA_CON|distancia_km": 0.98,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_7",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_35",
+     "CONECTA_CON|distancia_km": 1.41,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_36",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_7",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 7,
+   "Name_Estacion": "Mezquitán",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3539,
+     20.692
+    ]
+   },
+   "Pasajeros_diarios": 4557,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_6",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_8",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_8",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 8,
+   "Name_Estacion": "Refugio",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3532,
+     20.6829
+    ]
+   },
+   "Pasajeros_diarios": 4358,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_7",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_9",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_9",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 9,
+   "Name_Estacion": "Juárez",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3525,
+     20.6738
+    ]
+   },
+   "Pasajeros_diarios": 15606,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    },
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_8",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_10",
+     "CONECTA_CON|distancia_km": 0.7,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_21",
+     "CONECTA_CON|distancia_km": 0.59,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_10",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 10,
+   "Name_Estacion": "Mexicaltzingo",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.353,
+     20.6675
+    ]
+   },
+   "Pasajeros_diarios": 4175,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_9",
+     "CONECTA_CON|distancia_km": 0.7,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_11",
+     "CONECTA_CON|distancia_km": 0.7,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_11",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 11,
+   "Name_Estacion": "Washington",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.354,
+     20.6612
+    ]
+   },
+   "Pasajeros_diarios": 3507,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_10",
+     "CONECTA_CON|distancia_km": 0.7,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_12",
+     "CONECTA_CON|distancia_km": 0.72,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_12",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 12,
+   "Name_Estacion": "Santa Filomena",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.356,
+     20.6549
+    ]
+   },
+   "Pasajeros_diarios": 2694,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_11",
+     "CONECTA_CON|distancia_km": 0.72,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_13",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_13",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 13,
+   "Name_Estacion": "Unidad Deportiva",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.359,
+     20.6486
+    ]
+   },
+   "Pasajeros_diarios": 3094,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_12",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_14",
+     "CONECTA_CON|distancia_km": 0.78,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_14",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 14,
+   "Name_Estacion": "Urdaneta",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3625,
+     20.6423
+    ]
+   },
+   "Pasajeros_diarios": 4611,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_13",
+     "CONECTA_CON|distancia_km": 0.78,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_15",
+     "CONECTA_CON|distancia_km": 0.81,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_15",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 15,
+   "Name_Estacion": "18 de Marzo",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3665,
+     20.636
+    ]
+   },
+   "Pasajeros_diarios": 4483,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_14",
+     "CONECTA_CON|distancia_km": 0.81,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_16",
+     "CONECTA_CON|distancia_km": 0.83,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_16",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 16,
+   "Name_Estacion": "Isla Raza",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.371,
+     20.6297
+    ]
+   },
+   "Pasajeros_diarios": 2982,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_15",
+     "CONECTA_CON|distancia_km": 0.83,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_17",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_17",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 17,
+   "Name_Estacion": "Patria",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.376,
+     20.6234
+    ]
+   },
+   "Pasajeros_diarios": 3621,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_16",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_18",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_18",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 18,
+   "Name_Estacion": "España",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.381,
+     20.6171
+    ]
+   },
+   "Pasajeros_diarios": 2704,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_17",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_19",
+     "CONECTA_CON|distancia_km": 0.81,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_19",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 19,
+   "Name_Estacion": "Santuario Mártires de Cristo Rey",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.385,
+     20.6108
+    ]
+   },
+   "Pasajeros_diarios": 3631,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_18",
+     "CONECTA_CON|distancia_km": 0.81,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_20",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_20",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 20,
+   "Name_Estacion": "Periférico Sur",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.388,
+     20.6045
+    ]
+   },
+   "Pasajeros_diarios": 22300,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L1"
+    },
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_19",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L1"
+    },
+    {
+     "uid": "_:est_70",
+     "CONECTA_CON|distancia_km": 2.75,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_71",
+     "CONECTA_CON|distancia_km": 2.65,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_21",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 21,
+   "Name_Estacion": "Plaza Universidad",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.348,
+     20.6754
+    ]
+   },
+   "Pasajeros_diarios": 2783,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_9",
+     "CONECTA_CON|distancia_km": 0.59,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_22",
+     "CONECTA_CON|distancia_km": 0.88,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_38",
+     "CONECTA_CON|distancia_km": 0.11,
+     "CONECTA_CON|tiempo_min": 4.0,
+     "CONECTA_CON|tipo": "transbordo_peatonal",
+     "CONECTA_CON|linea": "L2-L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_22",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 22,
+   "Name_Estacion": "San Juan de Dios",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3408,
+     20.6752
+    ]
+   },
+   "Pasajeros_diarios": 2896,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_21",
+     "CONECTA_CON|distancia_km": 0.88,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_23",
+     "CONECTA_CON|distancia_km": 1.18,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_23",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 23,
+   "Name_Estacion": "Belisario Domínguez",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3315,
+     20.6727
+    ]
+   },
+   "Pasajeros_diarios": 2693,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_22",
+     "CONECTA_CON|distancia_km": 1.18,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_24",
+     "CONECTA_CON|distancia_km": 1.05,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_24",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 24,
+   "Name_Estacion": "Oblatos",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.323,
+     20.6715
+    ]
+   },
+   "Pasajeros_diarios": 2185,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_23",
+     "CONECTA_CON|distancia_km": 1.05,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_25",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_25",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 25,
+   "Name_Estacion": "Cristóbal de Oñate",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.315,
+     20.6705
+    ]
+   },
+   "Pasajeros_diarios": 2758,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_24",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_26",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_26",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 26,
+   "Name_Estacion": "San Andrés",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3075,
+     20.669
+    ]
+   },
+   "Pasajeros_diarios": 1903,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_25",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_27",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_27",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 27,
+   "Name_Estacion": "San Jacinto",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3,
+     20.6675
+    ]
+   },
+   "Pasajeros_diarios": 2571,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_26",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_28",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_28",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 28,
+   "Name_Estacion": "La Aurora",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.2925,
+     20.666
+    ]
+   },
+   "Pasajeros_diarios": 2887,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_27",
+     "CONECTA_CON|distancia_km": 0.94,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    },
+    {
+     "uid": "_:est_29",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_29",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 29,
+   "Name_Estacion": "Tetlán",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.2845,
+     20.6643
+    ]
+   },
+   "Pasajeros_diarios": 6159,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L2"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_28",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L2"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_30",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 30,
+   "Name_Estacion": "Arcos de Zapopan",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.418,
+     20.7375
+    ]
+   },
+   "Pasajeros_diarios": 20814,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_31",
+     "CONECTA_CON|distancia_km": 1.14,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_31",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 31,
+   "Name_Estacion": "Periférico Belenes",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.4095,
+     20.733
+    ]
+   },
+   "Pasajeros_diarios": 23720,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    },
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_30",
+     "CONECTA_CON|distancia_km": 1.14,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_32",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_59",
+     "CONECTA_CON|distancia_km": 0.52,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_60",
+     "CONECTA_CON|distancia_km": 1.4,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_32",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 32,
+   "Name_Estacion": "Mercado del Mar",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.399,
+     20.728
+    ]
+   },
+   "Pasajeros_diarios": 8726,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_31",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_33",
+     "CONECTA_CON|distancia_km": 1.72,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_33",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 33,
+   "Name_Estacion": "Zapopan Centro",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.386,
+     20.7215
+    ]
+   },
+   "Pasajeros_diarios": 10026,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_32",
+     "CONECTA_CON|distancia_km": 1.72,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_34",
+     "CONECTA_CON|distancia_km": 1.57,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_34",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 34,
+   "Name_Estacion": "Plaza Patria",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3745,
+     20.715
+    ]
+   },
+   "Pasajeros_diarios": 6392,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_33",
+     "CONECTA_CON|distancia_km": 1.57,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_35",
+     "CONECTA_CON|distancia_km": 1.5,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_35",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 35,
+   "Name_Estacion": "Circunvalación Country",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.364,
+     20.708
+    ]
+   },
+   "Pasajeros_diarios": 5658,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_34",
+     "CONECTA_CON|distancia_km": 1.5,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_6",
+     "CONECTA_CON|distancia_km": 1.41,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_36",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 36,
+   "Name_Estacion": "La Normal",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3487,
+     20.6951
+    ]
+   },
+   "Pasajeros_diarios": 6833,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_6",
+     "CONECTA_CON|distancia_km": 1.0,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_37",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_37",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 37,
+   "Name_Estacion": "Santuario",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3479,
+     20.6841
+    ]
+   },
+   "Pasajeros_diarios": 7715,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_36",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_38",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_38",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 38,
+   "Name_Estacion": "Guadalajara Centro",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3474,
+     20.6762
+    ]
+   },
+   "Pasajeros_diarios": 5876,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_37",
+     "CONECTA_CON|distancia_km": 0.99,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_39",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_21",
+     "CONECTA_CON|distancia_km": 0.11,
+     "CONECTA_CON|tiempo_min": 4.0,
+     "CONECTA_CON|tipo": "transbordo_peatonal",
+     "CONECTA_CON|linea": "L2-L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_39",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 39,
+   "Name_Estacion": "Independencia",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3444,
+     20.6708
+    ]
+   },
+   "Pasajeros_diarios": 8456,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_38",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_40",
+     "CONECTA_CON|distancia_km": 1.54,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_40",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 40,
+   "Name_Estacion": "Plaza de la Bandera",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3327,
+     20.6651
+    ]
+   },
+   "Pasajeros_diarios": 9890,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_39",
+     "CONECTA_CON|distancia_km": 1.54,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_41",
+     "CONECTA_CON|distancia_km": 1.26,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_41",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 41,
+   "Name_Estacion": "CUCEI",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3245,
+     20.6585
+    ]
+   },
+   "Pasajeros_diarios": 9224,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_40",
+     "CONECTA_CON|distancia_km": 1.26,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_42",
+     "CONECTA_CON|distancia_km": 1.15,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_42",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 42,
+   "Name_Estacion": "Revolución",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.317,
+     20.6525
+    ]
+   },
+   "Pasajeros_diarios": 8244,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_41",
+     "CONECTA_CON|distancia_km": 1.15,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_43",
+     "CONECTA_CON|distancia_km": 0.95,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_43",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 43,
+   "Name_Estacion": "Río Nilo",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.312,
+     20.6465
+    ]
+   },
+   "Pasajeros_diarios": 6106,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_42",
+     "CONECTA_CON|distancia_km": 0.95,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_44",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_44",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 44,
+   "Name_Estacion": "Tlaquepaque Centro",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3095,
+     20.64
+    ]
+   },
+   "Pasajeros_diarios": 8277,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_43",
+     "CONECTA_CON|distancia_km": 0.86,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_45",
+     "CONECTA_CON|distancia_km": 1.51,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_45",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 45,
+   "Name_Estacion": "Lázaro Cárdenas",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.304,
+     20.629
+    ]
+   },
+   "Pasajeros_diarios": 7357,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_44",
+     "CONECTA_CON|distancia_km": 1.51,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    },
+    {
+     "uid": "_:est_46",
+     "CONECTA_CON|distancia_km": 1.4,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_46",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 46,
+   "Name_Estacion": "Central de Autobuses",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.2985,
+     20.619
+    ]
+   },
+   "Pasajeros_diarios": 19196,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_L3"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_45",
+     "CONECTA_CON|distancia_km": 1.4,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "L3"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_47",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 47,
+   "Name_Estacion": "Barranca de Huentitán",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3035,
+     20.7445
+    ]
+   },
+   "Pasajeros_diarios": 6484,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_48",
+     "CONECTA_CON|distancia_km": 0.87,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_48",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 48,
+   "Name_Estacion": "Zoológico de Guadalajara",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.312,
+     20.741
+    ]
+   },
+   "Pasajeros_diarios": 2746,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_47",
+     "CONECTA_CON|distancia_km": 0.87,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_49",
+     "CONECTA_CON|distancia_km": 1.69,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_49",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 49,
+   "Name_Estacion": "Independencia Norte",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.33,
+     20.74
+    ]
+   },
+   "Pasajeros_diarios": 2541,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_48",
+     "CONECTA_CON|distancia_km": 1.69,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_50",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_50",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 50,
+   "Name_Estacion": "Lomas del Paraíso",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.338,
+     20.739
+    ]
+   },
+   "Pasajeros_diarios": 2272,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_49",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_51",
+     "CONECTA_CON|distancia_km": 0.56,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_51",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 51,
+   "Name_Estacion": "Rancho Nuevo",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.344,
+     20.7385
+    ]
+   },
+   "Pasajeros_diarios": 2581,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_50",
+     "CONECTA_CON|distancia_km": 0.56,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_52",
+     "CONECTA_CON|distancia_km": 0.47,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_52",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 52,
+   "Name_Estacion": "La Experiencia",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.349,
+     20.738
+    ]
+   },
+   "Pasajeros_diarios": 2676,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_51",
+     "CONECTA_CON|distancia_km": 0.47,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_53",
+     "CONECTA_CON|distancia_km": 0.38,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_53",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 53,
+   "Name_Estacion": "El Batán",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.353,
+     20.7375
+    ]
+   },
+   "Pasajeros_diarios": 3517,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_52",
+     "CONECTA_CON|distancia_km": 0.38,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_2",
+     "CONECTA_CON|distancia_km": 0.34,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_54",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 54,
+   "Name_Estacion": "La Cantera",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.368,
+     20.736
+    ]
+   },
+   "Pasajeros_diarios": 2584,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_2",
+     "CONECTA_CON|distancia_km": 1.08,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_55",
+     "CONECTA_CON|distancia_km": 1.13,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_55",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 55,
+   "Name_Estacion": "Tabachines",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.38,
+     20.735
+    ]
+   },
+   "Pasajeros_diarios": 3042,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_54",
+     "CONECTA_CON|distancia_km": 1.13,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_56",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_56",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 56,
+   "Name_Estacion": "Constitución",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.388,
+     20.734
+    ]
+   },
+   "Pasajeros_diarios": 3351,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_55",
+     "CONECTA_CON|distancia_km": 0.76,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_57",
+     "CONECTA_CON|distancia_km": 0.66,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_57",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 57,
+   "Name_Estacion": "Centro Cultural Universitario",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.395,
+     20.7335
+    ]
+   },
+   "Pasajeros_diarios": 2376,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_56",
+     "CONECTA_CON|distancia_km": 0.66,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_58",
+     "CONECTA_CON|distancia_km": 0.33,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_58",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 58,
+   "Name_Estacion": "San Isidro",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.3985,
+     20.733
+    ]
+   },
+   "Pasajeros_diarios": 3313,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_57",
+     "CONECTA_CON|distancia_km": 0.33,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_59",
+     "CONECTA_CON|distancia_km": 0.52,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_59",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 59,
+   "Name_Estacion": "La Tuzania",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.404,
+     20.7325
+    ]
+   },
+   "Pasajeros_diarios": 3290,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_58",
+     "CONECTA_CON|distancia_km": 0.52,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_31",
+     "CONECTA_CON|distancia_km": 0.52,
+     "CONECTA_CON|tiempo_min": 1.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_60",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 60,
+   "Name_Estacion": "Santa Margarita",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.423,
+     20.727
+    ]
+   },
+   "Pasajeros_diarios": 2652,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_31",
+     "CONECTA_CON|distancia_km": 1.4,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_61",
+     "CONECTA_CON|distancia_km": 1.17,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_61",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 61,
+   "Name_Estacion": "Acueducto",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.433,
+     20.72
+    ]
+   },
+   "Pasajeros_diarios": 2199,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_60",
+     "CONECTA_CON|distancia_km": 1.17,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_62",
+     "CONECTA_CON|distancia_km": 0.96,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_62",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 62,
+   "Name_Estacion": "5 de Mayo",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.44,
+     20.713
+    ]
+   },
+   "Pasajeros_diarios": 3301,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_61",
+     "CONECTA_CON|distancia_km": 0.96,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_63",
+     "CONECTA_CON|distancia_km": 0.96,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_63",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 63,
+   "Name_Estacion": "San Juan de Ocotán",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.447,
+     20.706
+    ]
+   },
+   "Pasajeros_diarios": 2893,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_62",
+     "CONECTA_CON|distancia_km": 0.96,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_64",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_64",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 64,
+   "Name_Estacion": "Vallarta",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.454,
+     20.694
+    ]
+   },
+   "Pasajeros_diarios": 2045,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_63",
+     "CONECTA_CON|distancia_km": 1.37,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_65",
+     "CONECTA_CON|distancia_km": 1.44,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_65",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 65,
+   "Name_Estacion": "Estadio Chivas",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.4625,
+     20.682
+    ]
+   },
+   "Pasajeros_diarios": 2701,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_64",
+     "CONECTA_CON|distancia_km": 1.44,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_66",
+     "CONECTA_CON|distancia_km": 1.22,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_66",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 66,
+   "Name_Estacion": "Ciudad Judicial",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.46,
+     20.67
+    ]
+   },
+   "Pasajeros_diarios": 2341,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_65",
+     "CONECTA_CON|distancia_km": 1.22,
+     "CONECTA_CON|tiempo_min": 2.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_67",
+     "CONECTA_CON|distancia_km": 1.29,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_67",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 67,
+   "Name_Estacion": "Miramar",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.455,
+     20.658
+    ]
+   },
+   "Pasajeros_diarios": 2830,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_66",
+     "CONECTA_CON|distancia_km": 1.29,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_68",
+     "CONECTA_CON|distancia_km": 1.29,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_68",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 68,
+   "Name_Estacion": "El Colli",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.45,
+     20.646
+    ]
+   },
+   "Pasajeros_diarios": 2605,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_67",
+     "CONECTA_CON|distancia_km": 1.29,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_69",
+     "CONECTA_CON|distancia_km": 1.6,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_69",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 69,
+   "Name_Estacion": "Mariano Otero",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.44,
+     20.633
+    ]
+   },
+   "Pasajeros_diarios": 2707,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_68",
+     "CONECTA_CON|distancia_km": 1.6,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_70",
+     "CONECTA_CON|distancia_km": 3.23,
+     "CONECTA_CON|tiempo_min": 6.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_70",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 70,
+   "Name_Estacion": "ITESO",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.417,
+     20.609
+    ]
+   },
+   "Pasajeros_diarios": 3593,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_69",
+     "CONECTA_CON|distancia_km": 3.23,
+     "CONECTA_CON|tiempo_min": 6.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_20",
+     "CONECTA_CON|distancia_km": 2.75,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_71",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 71,
+   "Name_Estacion": "8 de Julio",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.36,
+     20.601
+    ]
+   },
+   "Pasajeros_diarios": 2893,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_20",
+     "CONECTA_CON|distancia_km": 2.65,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_72",
+     "CONECTA_CON|distancia_km": 2.54,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_72",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 72,
+   "Name_Estacion": "Adolf Horn",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.333,
+     20.599
+    ]
+   },
+   "Pasajeros_diarios": 2397,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_71",
+     "CONECTA_CON|distancia_km": 2.54,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_73",
+     "CONECTA_CON|distancia_km": 2.63,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_73",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 73,
+   "Name_Estacion": "Jalisco 200 Años",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.305,
+     20.6
+    ]
+   },
+   "Pasajeros_diarios": 3273,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_72",
+     "CONECTA_CON|distancia_km": 2.63,
+     "CONECTA_CON|tiempo_min": 5.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_74",
+     "CONECTA_CON|distancia_km": 1.73,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_74",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 74,
+   "Name_Estacion": "Artesanos",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.29,
+     20.59
+    ]
+   },
+   "Pasajeros_diarios": 2365,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_73",
+     "CONECTA_CON|distancia_km": 1.73,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_75",
+     "CONECTA_CON|distancia_km": 1.85,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_75",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 75,
+   "Name_Estacion": "Las Pintas",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.275,
+     20.578
+    ]
+   },
+   "Pasajeros_diarios": 3501,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_74",
+     "CONECTA_CON|distancia_km": 1.85,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    },
+    {
+     "uid": "_:est_76",
+     "CONECTA_CON|distancia_km": 1.38,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  },
+  {
+   "uid": "_:est_76",
+   "dgraph.type": "Estacion",
+   "Id_Estacion": 76,
+   "Name_Estacion": "Carretera a Chapala",
+   "location": {
+    "type": "Point",
+    "coordinates": [
+     -103.27,
+     20.565
+    ]
+   },
+   "Pasajeros_diarios": 6675,
+   "PERTENECE_LINEA": [
+    {
+     "uid": "_:linea_MP"
+    }
+   ],
+   "CONECTA_CON": [
+    {
+     "uid": "_:est_75",
+     "CONECTA_CON|distancia_km": 1.38,
+     "CONECTA_CON|tiempo_min": 3.0,
+     "CONECTA_CON|tipo": "tramo",
+     "CONECTA_CON|linea": "MP"
+    }
+   ]
+  }
+ ]
+}

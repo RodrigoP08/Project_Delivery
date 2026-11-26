@@ -43,7 +43,7 @@ def main():
             break
             
         if opcion == 1: #poblar
-            poblar_datos(cass_session)
+            poblar_datos(cass_session, db_session)
         if opcion == 2 : ##MONGO
             mongo_menus.actions_mongo(db_session)
         if opcion == 3: ## DGRAPH

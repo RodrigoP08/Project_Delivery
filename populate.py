@@ -7,13 +7,15 @@ La idea es que se tenga un archivo de los mencionados anteriormente en la carpet
 se buscara la manera de extraer los datos de cada uno y realizar la poblacion de cada base de datos
 '''
 import csv, os, json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from connect import log
 from Cassandra import model_Cassandra
 
-
 #*********************************************************************************************
+#DEBIDO A LOS FORMTAOS DE LAS FECHAS Y HORAS, se UTILIZO IA PARA PODER HACER HERRMAINETAS PARA PODER FORMATEAR
+#EL TIPO DE DATO PARA QUE CUADRE
+
 def to_TIMESTAMP(v): 
     #convertir a datetime
     return datetime.strptime(v, "%Y-%m-%d %H:%M:%S%z")
@@ -22,9 +24,17 @@ def to_DATE(v):
     return datetime.strptime(v[:10], "%Y-%m-%d").date()
 
 def leer_csv(nombre):
-    with open(f"data/{nombre}.csv", mode="r", encoding="utf-8") as archivo:
+    with open(f"data/cassandra/{nombre}.csv", mode="r", encoding="utf-8") as archivo:
         return list(csv.DictReader(archivo))
 
+def leer_json(nombre):
+    with open(f"data/mongo/{nombre}.json", mode="r", encoding="utf-8") as archivo:
+        return json.load(archivo)
+
+def _fecha_local(v):
+    return datetime.strptime(v["$date"], "%Y-%m-%dT%H:%M:%SZ") - timedelta(hours=6)
+
+#-----------------------------------------------------------------------------------------------------    
 
 def poblar_trips_by_user(session):
     stmt = session.prepare(model_Cassandra.INSERT_TRIPS_BY_USER)
@@ -85,9 +95,41 @@ def poblar_cassandra(session):
 
 #************************************************************************************************************
 
+def poblar_routes(db):
+    datos = leer_json("routes")
+    for r in datos:
+        r["estimated_duration"] = int(r["estimated_duration"])
+        for s in r["stations"]:                       
+            s["stop_sequence"] = s.pop("sequence")
+    db.routes.delete_many({})
+    db.routes.insert_many(datos)
+
+def poblar_stations(db):
+    datos = leer_json("stations")
+    db.stations.delete_many({})
+    db.stations.insert_many(datos)
+
+def poblar_schedules(db):
+    datos = leer_json("schedules")
+    for h in datos:
+        h["service_date"] = _fecha_local(h["service_date"])
+        h["departure_time"] = _fecha_local(h["departure_time"])
+        h["arrival_time"] = _fecha_local(h["arrival_time"])
+    db.schedules.delete_many({})
+    db.schedules.insert_many(datos, ordered=False)
+    
+
+def poblar_mongo(db):
+    poblar_routes(db)
+    poblar_stations(db)
+    poblar_schedules(db)
+    log.info("MongoDB poblada")
+
 # def poblar_datos(mongo_db, cassandra_session, dgraph_client):
-def poblar_datos(cassandra_session):
+def poblar_datos(cassandra_session, mongo_session):
     if cassandra_session is not None:
         poblar_cassandra(cassandra_session)
+    if mongo_session is not None:
+        poblar_mongo(mongo_session)
         
     print("Poblado de datos terminado.")

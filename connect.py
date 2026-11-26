@@ -69,7 +69,7 @@ def connect_mongo():
         client.admin.command("ping")   # falla rapido si el contenedor no esta arriba
         db = client[MONGODB_DB] #obtiwne la base transporte
 
-        # model_Mongo.setup_schema(db)   # colecciones con validador + indices (idempotente)
+        model_Mongo.setup_schema(db)   # colecciones con validador + indices (idempotente)
 
         log.info("MongoDB conectado. Base de datos: %s", MONGODB_DB)
         return db  #devuelve el objeto de la base 

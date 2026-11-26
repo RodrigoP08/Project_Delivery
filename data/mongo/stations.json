@@ -1,0 +1,770 @@
+[
+  {
+    "station_id": "S001",
+    "station_name": "Auditorio",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S002",
+    "station_name": "Periférico Norte",
+    "transport_types": [
+      "camion",
+      "tren"
+    ],
+    "route_ids": [
+      "L1",
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S003",
+    "station_name": "Dermatología",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S004",
+    "station_name": "Atemajac",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S005",
+    "station_name": "División del Norte",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S006",
+    "station_name": "Ávila Camacho",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1",
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S007",
+    "station_name": "Mezquitán",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S008",
+    "station_name": "Refugio",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S009",
+    "station_name": "Juárez",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1",
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S010",
+    "station_name": "Mexicaltzingo",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S011",
+    "station_name": "Washington",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S012",
+    "station_name": "Santa Filomena",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S013",
+    "station_name": "Unidad Deportiva",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S014",
+    "station_name": "Urdaneta",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S015",
+    "station_name": "18 de Marzo",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S016",
+    "station_name": "Isla Raza",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S017",
+    "station_name": "Patria",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S018",
+    "station_name": "España",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S019",
+    "station_name": "Santuario Mártires de Cristo Rey",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L1"
+    ]
+  },
+  {
+    "station_id": "S020",
+    "station_name": "Periférico Sur",
+    "transport_types": [
+      "camion",
+      "tren"
+    ],
+    "route_ids": [
+      "L1",
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S021",
+    "station_name": "Plaza Universidad",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S022",
+    "station_name": "San Juan de Dios",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S023",
+    "station_name": "Belisario Domínguez",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S024",
+    "station_name": "Oblatos",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S025",
+    "station_name": "Cristóbal de Oñate",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S026",
+    "station_name": "San Andrés",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S027",
+    "station_name": "San Jacinto",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S028",
+    "station_name": "La Aurora",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S029",
+    "station_name": "Tetlán",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L2"
+    ]
+  },
+  {
+    "station_id": "S030",
+    "station_name": "Arcos de Zapopan",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S031",
+    "station_name": "Periférico Belenes",
+    "transport_types": [
+      "camion",
+      "tren"
+    ],
+    "route_ids": [
+      "L3",
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S032",
+    "station_name": "Mercado del Mar",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S033",
+    "station_name": "Zapopan Centro",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S034",
+    "station_name": "Plaza Patria",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S035",
+    "station_name": "Circunvalación Country",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S036",
+    "station_name": "La Normal",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S037",
+    "station_name": "Santuario",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S038",
+    "station_name": "Guadalajara Centro",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S039",
+    "station_name": "Independencia",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S040",
+    "station_name": "Plaza de la Bandera",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S041",
+    "station_name": "CUCEI",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S042",
+    "station_name": "Revolución",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S043",
+    "station_name": "Río Nilo",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S044",
+    "station_name": "Tlaquepaque Centro",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S045",
+    "station_name": "Lázaro Cárdenas",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S046",
+    "station_name": "Central de Autobuses",
+    "transport_types": [
+      "tren"
+    ],
+    "route_ids": [
+      "L3"
+    ]
+  },
+  {
+    "station_id": "S047",
+    "station_name": "Barranca de Huentitán",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S048",
+    "station_name": "Zoológico de Guadalajara",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S049",
+    "station_name": "Independencia Norte",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S050",
+    "station_name": "Lomas del Paraíso",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S051",
+    "station_name": "Rancho Nuevo",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S052",
+    "station_name": "La Experiencia",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S053",
+    "station_name": "El Batán",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S054",
+    "station_name": "La Cantera",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S055",
+    "station_name": "Tabachines",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S056",
+    "station_name": "Constitución",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S057",
+    "station_name": "Centro Cultural Universitario",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S058",
+    "station_name": "San Isidro",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S059",
+    "station_name": "La Tuzania",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S060",
+    "station_name": "Santa Margarita",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S061",
+    "station_name": "Acueducto",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S062",
+    "station_name": "5 de Mayo",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S063",
+    "station_name": "San Juan de Ocotán",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S064",
+    "station_name": "Vallarta",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S065",
+    "station_name": "Estadio Chivas",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S066",
+    "station_name": "Ciudad Judicial",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S067",
+    "station_name": "Miramar",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S068",
+    "station_name": "El Colli",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S069",
+    "station_name": "Mariano Otero",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S070",
+    "station_name": "ITESO",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S071",
+    "station_name": "8 de Julio",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S072",
+    "station_name": "Adolf Horn",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S073",
+    "station_name": "Jalisco 200 Años",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S074",
+    "station_name": "Artesanos",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S075",
+    "station_name": "Las Pintas",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  },
+  {
+    "station_id": "S076",
+    "station_name": "Carretera a Chapala",
+    "transport_types": [
+      "camion"
+    ],
+    "route_ids": [
+      "MP"
+    ]
+  }
+]
