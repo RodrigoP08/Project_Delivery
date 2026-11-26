@@ -20,6 +20,7 @@ def print_menu_mongo():
         6: "Consulta de transportes disponibles en una estacion",
         7: "Consultar la cantidad de estaciones por ruta",
         8: "Consultar la cantidad de rutas por tipo de transporte",
+        9: "Ver que índice usa una consulta (explain)"
     }
     for key in mm_options.keys():
         print(key, '--', mm_options[key])
@@ -95,8 +96,34 @@ def actions_mongo(db):
                 print(f"\nQ8: Cantidad de rutas por tipo de transporte")
                 model_Mongo.get_routes_per_transport_type(db)
 
+            elif option == 9:
+                print(f"\nExtra: explain que indice usa la consulta")
+                which = input("Consulta a analizar (1 = Q1 horarios entre estaciones, 4 = Q4 horarios por tipo): ").strip()
+                if which == "1":
+                    origin = ask_station("Estacion origen")
+                    destination = ask_station("Estacion destino")
+                    service_date = datetime.strptime(ask_date(), "%Y-%m-%d")
+                    model_Mongo.explain_query(
+                        db, "schedules",
+                        {"departure_station": origin, "arrival_station": destination,
+                         "service_date": service_date},
+                        sort={"departure_time": 1})
+                elif which == "4":
+                    print("Tipos disponibles:", ", ".join(model_Mongo.list_transport_types(db)))
+                    transport_type = input("Tipo de transporte: ").strip()
+                    station = ask_station("Estacion de salida")
+                    service_date = datetime.strptime(ask_date(), "%Y-%m-%d")
+                    model_Mongo.explain_query(
+                        db, "schedules",
+                        {"transport_type": transport_type, "departure_station": station,
+                         "service_date": service_date},
+                        sort={"departure_time": 1})
+                else:
+                    print("Opcion no valida (usa 1 o 4).")
+
             else:
                 print("Invalid option. Please try again.")
+                
         except Exception as e:
             log.error("Error en consulta MongoDB (opcion %s): %s", option, e)
             print(f"Error al ejecutar la consulta: {e}")
